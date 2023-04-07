@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi sitio web con HTML y CSS</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  /* Estilos para el menú de navegación */
+.navbar {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-link {
+  color: white;
+  font-size: 18px;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+/* Estilos para el botón y el modal */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.btn {
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: blue;
+  color: white;
+}
+
+.btn-danger {
+  background-color: red;
+  color: white;
+}
+
+.btn-success {
+  background-color: green;
+  color: white;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+
+ }
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.modal-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.close-button {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-body {
+  margin: 20px 0;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.modal-footer button + button {
+  margin-left: 10px;
+}
+
+  </style>
+</head>
+<body>
+  <!-- Menú de navegación -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="logo">Inicio</a>
+      <ul class="nav-links">
+        <li>
+          <a href="#" class="nav-link">Acerca de</a>
+        </li>
+        <li>
+          <a href="#" class="nav-link">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="flex justify-center">
+      <button class="btn btn-primary">
+        Abrir modal
+      </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+      <div class="modal-overlay" id="modal-overlay"></div>
+
+      <div class="modal-container">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Ejemplo de modal con CSS</h2>
+            <button class="close-button" id="close-button">&times;</button>
+          </div>
+
+          <div class="modal-body">
+            <p>Este es un ejemplo de modal con CSS. Puedes personalizar el contenido a tu gusto.</p>
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-danger" id="close-modal">
+              Cerrar
+            </button>
+            <button class="btn btn-success">
+              Guardar cambios
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
