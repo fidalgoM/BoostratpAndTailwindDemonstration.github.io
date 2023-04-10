@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -11,101 +12,29 @@
   <div class="container">
     <h1 class="text-center mt-4">Ejemplo de Bootstrap</h1>
     <hr>
-
     <div class="row">
       <div class="col-md-6">
-        <h2>Funcionalidades de Bootstrap</h2>
-        <ul>
-          <li>Rejilla de 12 columnas</li>
-          <li>Tipografía</li>
-          <li>Componentes predefinidos</li>
-          <li>Formularios</li>
-          <li>Botones</li>
-          <li>Alertas</li>
-          <li>Barra de navegación</li>
-          <li>Modal</li>
-        </ul>
-      </div>
+        <h2>Formulario de contacto</h2>
+        <form>
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Introduce tu nombre">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Introduce tu email">
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>      </div>
       <div class="col-md-6">
         <img src="https://via.placeholder.com/400x400" alt="Imagen de ejemplo" class="img-fluid">
       </div>
-    </div>
-
-    <hr>
-
-    <h2>Formulario de contacto</h2>
-    <form>
-      <div class="form-group">
-        <label for="nombre">Nombre:</label>
-        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Introduce tu nombre">
-      </div>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" class="form-control" id="email" name="email" placeholder="Introduce tu email">
-      </div>
-      <div class="form-group">
-        <label for="mensaje">Mensaje:</label>
-        <textarea class="form-control" id="mensaje" name="mensaje" rows="3"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
-
-    <hr>
-
-    <div class="alert alert-warning" role="alert">
-      Este es un ejemplo de alerta de Bootstrap.
-    </div>
-
-    <hr>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Bootstrap</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Inicio</a>
-          </li>
-          <li class="nav-item">
-<li class="nav-item">
-            <a class="nav-link" href="#">Acerca de</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <hr>
-
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-      Abrir modal
-    </button>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ejemplo de modal de Bootstrap</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            Este es un ejemplo de modal de Bootstrap. Puedes personalizar el contenido a tu gusto.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary">Guardar cambios</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    </div> 
+<hr>
 
   <!-- Enlace al archivo JavaScript de Bootstrap -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
