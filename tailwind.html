@@ -1,77 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejemplo de Tailwind CSS</title>
-    <!-- Enlace al archivo CSS de Tailwind -->
-    <link rel="stylesheet" href="https://cdn.tailwindcss.com" />
-  </head>
-  <body class="bg-white-200">
-    <div class="container mx-auto px-4 py-8">
-      <h1 class="text-3xl text-center font-bold mb-4">
-        Ejemplo de Tailwind CSS
-      </h1>
-      <hr class="border-t-2 border-gray-400 mb-8" />
-      <div class="flex flex-col md:flex-row md:-mx-4">
-        <div class="md:w-1/2 md:px-4">
-          <h2 class="text-2xl font-bold mb-4">Formulario de contacto</h2>
-          <form>
-            <div class="mb-4">
-              <label class="block text-gray-700 font-bold mb-2" for="nombre"
-                >Nombre:</label
-              >
-              <input
-                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="nombre"
-                name="nombre"
-                type="text"
-                placeholder="Introduce tu nombre"
-              />
-            </div>
-            <div class="mb-4">
-              <label class="block text-gray-700 font-bold mb-2" for="email"
-                >Email:</label
-              >
-              <input
-                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="email"
-                name="email"
-                type="email"
-                placeholder="Introduce tu email"
-              />
-            </div>
-            <div class="mb-6">
-              <label class="block text-gray-700 font-bold mb-2" for="mensaje"
-                >Mensaje:</label
-              >
-              <textarea
-                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="mensaje"
-                name="mensaje"
-                rows="3"
-              ></textarea>
-            </div>
-            <button
-              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-              type="button"
-            >
-              Enviar
-            </button>
-          </form>
-        </div>
-        <div class="md:w-1/2 md:px-4 mt-8 md:mt-0">
-          <img
-            src="https://via.placeholder.com/400x400"
-            alt="Imagen de ejemplo"
-            class="max-w-full h-auto"
-          />
-        </div>
-      </div>
-      <hr class="border-t-2 border-gray-400 mt-8" />
-    </div>
 
-    <!-- Enlace al archivo JavaScript de Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejemplo de Tailwind CSS</title>
+  <!-- Enlace al archivo CSS de Tailwind -->
+  <link rel="stylesheet" href="https://cdn.tailwindcss.com" />
+</head>
+
+<body class="bg-white-200">
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl text-center font-bold mb-4">
+      Ejemplo de Tailwind CSS
+    </h1>
+    <hr class="border-t-2 border-gray-400 mb-8" />
+    <div class="flex flex-col md:flex-row md:-mx-4">
+      <div class="md:w-1/2 md:px-4">
+        <h2 class="text-2xl font-bold mb-4">Formulario de contacto</h2>
+        <form>
+          <div class="mb-4">
+            <label class="block text-gray-700 font-bold mb-2" for="nombre">Nombre:</label>
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="nombre" name="nombre" type="text" placeholder="Introduce tu nombre" />
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 font-bold mb-2" for="email">Email:</label>
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="email" name="email" type="email" placeholder="Introduce tu email" />
+          </div>
+          <div class="mb-6">
+            <label class="block text-gray-700 font-bold mb-2" for="mensaje">Mensaje:</label>
+            <textarea
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="mensaje" name="mensaje" rows="3"></textarea>
+          </div>
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            type="button">
+            Enviar
+          </button>
+        </form>
+      </div>
+      <div class="md:w-1/2 md:px-4 mt-8 md:mt-0">
+        <img src="https://via.placeholder.com/400x400" alt="Imagen de ejemplo" class="max-w-full h-auto" />
+      </div>
+    </div>
+    <hr class="border-t-2 border-gray-400 mt-8" />
+  </div>
+
+  <!-- Enlace al archivo JavaScript de Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
 </html>
