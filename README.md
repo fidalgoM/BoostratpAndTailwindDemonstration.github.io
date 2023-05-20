@@ -1,8 +1,8 @@
 # BoostratpAndTailwindDemonstration.github.io
 
 ### Ejemplo HTML
-[HTML](fidalgoM.github.io/css.html)
+[HTML](fidalgoM.github.io/blob/main/css.html)
 ### Ejemplo Bootstrap
-[Bootstrap](fidalgoM.github.io/bootstrap.html)
+[Bootstrap](fidalgoM.github.io/blob/main/bootstrap.html)
 ### Ejemplo Tailwind
-[Tailwind](fidalgoM.github.io/tailwind.html)
+[Tailwind](fidalgoM.github.io/blob/main/tailwind.html)
